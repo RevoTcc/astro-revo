@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       container: {
         center: true,
-      },
+      }, 
       boxShadow: {
         solidBox: '0.5rem 0.5rem #373A50',
       },
