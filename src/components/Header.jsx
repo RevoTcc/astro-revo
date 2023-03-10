@@ -27,13 +27,13 @@ const Header = () => {
   ]
 
   return (
-    <nav className='bg-darkBlue'>
+    <nav className='bg-darkBlue fixed top-0 left-0 w-full z-50'>
       <div className='mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex justify-between h-16'>
           <div className='flex-shrink-0 flex items-center'>
             <a
               href='/'
-              className='text-white hover:text-blue font-SaoTorpes text-xl'>
+              className='text-white hover:text-orange transition-all font-SaoTorpes text-xl'>
               Revo
             </a>
           </div>
@@ -43,7 +43,7 @@ const Header = () => {
                 <a
                   key={item.url}
                   href={item.url}
-                  className='text-gray-300 text-white hover:text-blue font-Montserrat'>
+                  className='text-white hover:text-orange transition-all font-Montserrat'>
                   {item.label}
                 </a>
               ))}
@@ -53,7 +53,7 @@ const Header = () => {
             <button
               onClick={() => setOpen(!open)}
               type='button'
-              className='bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-blue text-white hover:bg-gray-700'>
+              className='bg-orange hover:bg-blue text-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:bg-gray-700'>
               <span className='sr-only'>Open main menu</span>
               <svg
                 className={`${open ? 'hidden' : 'block'} h-6 w-6`}
@@ -94,7 +94,7 @@ const Header = () => {
             <a
               key={item.url}
               href={item.url}
-              className='block text-white hover:text-blue font-Montserrat py-4 border-b-2 border-white'>
+              className='block text-white hover:text-orange font-Montserrat py-4 border-t-2 border-white'>
               {item.label}
             </a>
           ))}

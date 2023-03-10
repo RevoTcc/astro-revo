@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title='Erro'>
+  <main class='container flex flex-col items-center justify-center'>
+    <img
+      src='/images/content/404.svg'
+      alt='Imagem de Erro'
+      class='w-1/2 m-auto'
+    />
+    <h2>Erro! Página não encontrada.</h2>
+    <button onclick='window.history.back()'>Voltar</button>
+  </main>
+</Layout>

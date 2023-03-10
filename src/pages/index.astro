@@ -1,45 +1,125 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header";
-import Footer from '../components/Footer.astro';
+import Layout from '../layouts/Layout.astro'
+import Header from '../components/Header'
+import Footer from '../components/Footer.astro'
+import Card from '../components/Card.astro'
 ---
 
-<Layout title="Revo">
+<Layout title='Revo'>
   <Header client:load />
-  <main class="container p-8">
-    <p class="font-Montserrat text-4xl">Bem-vindo à REVO</p>
-    <p>
-      Nós somos uma consultoria de tecnologia especializada em desenvolvimento
-      de aplicativos móveis. Nosso objetivo é revolucionar o mercado de
-      aplicativos, trazendo soluções personalizadas para cada cliente.
-    </p>
-    <p>
-      Com uma equipe altamente qualificada e atualizada com as tecnologias mais
-      recentes, estamos prontos para criar aplicativos modernos e eficientes que
-      atendam às suas necessidades. Além disso, nossa identidade visual é
-      moderna e minimalista, refletindo a nossa abordagem inovadora para o
-      desenvolvimento de aplicativos.
-    </p>
-    <p>
-      Entre em contato conosco e vamos trabalhar juntos para criar o aplicativo
-      móvel que você precisa.
-    </p>
+  <main class='w-11/12 container p-4'>
+    <Card>
+      <p class='font-Montserrat text-4xl'>Bem-vindo à REVO</p>
+      <p>
+        Nós somos uma consultoria de tecnologia especializada em desenvolvimento
+        de aplicativos móveis. Nosso objetivo é revolucionar o mercado de
+        aplicativos, trazendo soluções personalizadas para cada cliente.
+        <br />
+        Com uma equipe altamente qualificada e atualizada com as tecnologias mais
+        recentes, estamos prontos para criar aplicativos modernos e eficientes que
+        atendam às suas necessidades. Além disso, nossa identidade visual é moderna
+        e minimalista, refletindo a nossa abordagem inovadora para o desenvolvimento
+        de aplicativos.
+        <br />
+        Entre em contato conosco e vamos trabalhar juntos para criar o aplicativo
+        móvel que você precisa.
+      </p>
+    </Card>
+    <img
+      src='/images/content/work.svg'
+      alt='A girl working'
+      class='m-auto w-1/2'
+    />
   </main>
+  <h2 class='text-center p-4'>Veja mais...</h2>
+  <div class='bg-darkBlue flex flex-col items-center'>
+    <div class='w-11/12 p-4 grid grid-cols-1 lg:grid-cols-2 place-items-center'>
+      <Card>
+        <h2>Nossos serviços</h2>
+        <p>
+          Nossa equipe está pronta para ajudá-lo a crescer e se destacar no
+          mercado, utilizando as mais recentes tecnologias e práticas de
+          desenvolvimento. Bora impulsionar sua empresa pro sucesso juntos? Dá
+          uma olhada nos nossos serviços e vem com a gente!
+        </p>
+        <br />
+        <button>Conheça nossos serviços</button>
+      </Card>
+      <img
+        src='/images/content/idea.svg'
+        alt=''
+        class='w-1/2 order-first md:order-last'
+      />
+    </div>
+    <div class='w-11/12 p-4 grid grid-cols-1 lg:grid-cols-2 place-items-center'>
+      <img
+        src='/images/content/computer.svg'
+        alt=''
+        class='w-1/2 order-first'
+      />
+      <Card>
+        <h2>O que produzimos</h2>
+        <p>
+          Produzimos tecnologia de ponta pra atender às suas necessidades de
+          negócio. Nossa equipe experiente está pronta pra criar soluções
+          personalizadas e te ajudar a impulsionar sua presença online. Bora
+          desenvolver juntos?
+        </p>
+        <br />
+        <button>conheça nossos produtos</button>
+      </Card>
+    </div>
+    <div class='w-11/12 p-4 grid grid-cols-1 lg:grid-cols-2 place-items-center'>
+      <Card>
+        <h2>Conheça nossa equipe</h2>
+        <p>
+          Nossa equipe é a sua equipe! Trabalhamos juntos para alcançar o
+          sucesso do seu negócio. Conheça nossos profissionais apaixonados por
+          tecnologia e inovação, e descubra como podemos contribuir com nossa
+          experiência e habilidades únicas para o crescimento da sua empresa.
+        </p>
+        <br />
+        <button>Conheça nossa equipe</button>
+      </Card>
+      <img
+        src='/images/content/leading.svg'
+        alt=''
+        class='w-1/2 order-first md:order-last'
+      />
+    </div>
+    <div class='w-11/12 p-4 grid grid-cols-1 lg:grid-cols-2 place-items-center'>
+      <img
+        src='/images/content/creation.svg'
+        alt=''
+        class='w-1/2 order-first'
+      />
+      <Card>
+        <h2>Nossa identidade Visual</h2>
+        <p>
+          A nossa abordagem única em tecnologia se reflete na nossa identidade
+          visual, criando uma experiência personalizada e inovadora para o seu
+          negócio.
+        </p>
+        <br />
+        <button>Conheça nossa identidade</button>
+      </Card>
+    </div>
+  </div>
   <Footer />
 </Layout>
 
 <style is:global>
   @font-face {
-    font-family: "Nunito";
-    src: url("/fonts/NunitoSans-Regular.ttf");
+    font-family: 'Nunito';
+    src: url('/fonts/NunitoSans-Regular.ttf');
   }
   @font-face {
-    font-family: "Sao Torpes";
-    src: url("/fonts/Sao Torpes.otf");
+    font-family: 'Sao Torpes';
+    src: url('/fonts/Sao Torpes.otf');
   }
 
   @font-face {
-    font-family: "Montserrat";
-    src: url("/fonts/Montserrat-Bold.ttf");
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Bold.ttf');
   }
 </style>
