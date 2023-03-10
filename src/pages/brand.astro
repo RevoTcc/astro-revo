@@ -1,48 +1,50 @@
 ---
-import Card from "../components/Card.astro";
-import ColorContainer from "../components/container/ColorContainer.astro";
-import Footer from '../components/Footer.astro';
-import Header from "../components/Header";
-import Layout from "../layouts/Layout.astro";
+import Card from '../components/Card.astro'
+import ColorContainer from '../components/container/ColorContainer.astro'
+import Footer from '../components/Footer.astro'
+import Header from '../components/Header'
+import Layout from '../layouts/Layout.astro'
 
 const colore = [
   {
-    name: "#9297CB",
-    title: "Azul - confiança",
+    name: '#9297CB',
+    title: 'Azul - confiança',
     description:
-      "Quando você trabalha conosco, pode ter a certeza de que estará em boas mãos. Nós criamos soluções tecnológicas de qualidade, que vão além das suas expectativas.",
+      'Quando você trabalha conosco, pode ter a certeza de que estará em boas mãos. Nós criamos soluções tecnológicas de qualidade, que vão além das suas expectativas.',
   },
   {
-    name: "#EE7036",
-    title: "Laranja - energia",
+    name: '#EE7036',
+    title: 'Laranja - energia',
     description:
-      "Estamos sempre animados e empolgados com o que fazemos. Juntos, podemos transformar sua ideia em um aplicativo incrível!",
+      'Estamos sempre animados e empolgados com o que fazemos. Juntos, podemos transformar sua ideia em um aplicativo incrível!',
   },
   {
-    name: "#F7CB9A",
-    title: "Amarelo - criatividade",
+    name: '#F7CB9A',
+    title: 'Amarelo - criatividade',
     description:
-      "Somos especialistas em criar soluções personalizadas que atendem às suas necessidades. Trabalhamos com a mais alta qualidade, e nossos produtos são verdadeiras obras-primas.",
+      'Somos especialistas em criar soluções personalizadas que atendem às suas necessidades. Trabalhamos com a mais alta qualidade, e nossos produtos são verdadeiras obras-primas.',
   },
   {
-    name: "#F6C1A7",
-    title: "Salmão - elegância",
+    name: '#F6C1A7',
+    title: 'Salmão - elegância',
     description:
-      "Cada detalhe é pensado com cuidado, para que possamos entregar o melhor resultado possível. Somos sofisticados e elegantes em tudo o que fazemos.",
+      'Cada detalhe é pensado com cuidado, para que possamos entregar o melhor resultado possível. Somos sofisticados e elegantes em tudo o que fazemos.',
   },
   {
-    name: "#B6C796",
-    title: "Verde - prosperidade",
+    name: '#B6C796',
+    title: 'Verde - prosperidade',
     description:
-      "Trabalhando conosco, você pode crescer e alcançar novos patamares no mundo da tecnologia. Nós estamos aqui para ajudá-lo a prosperar e evoluir em seu negócio. Juntos, podemos alcançar o sucesso. Venha fazer parte da nossa revolução tecnológica!",
+      'Trabalhando conosco, você pode crescer e alcançar novos patamares no mundo da tecnologia. Nós estamos aqui para ajudá-lo a prosperar e evoluir em seu negócio. Juntos, podemos alcançar o sucesso. Venha fazer parte da nossa revolução tecnológica!',
   },
-];
+]
 ---
 
-<Layout title="Identidade">
+<Layout title='Identidade'>
   <Header client:load />
-  <main class="container p-10 grid grid-cols-1 md:grid-cols-2 place-items-center">
-    <img src="/images/logo.svg" alt="Revo logo" class="w-11/12  ">
+  <main
+    class='w-11/12 container p-4 grid grid-cols-1 md:grid-cols-2 place-items-center'
+  >
+    <img src='/images/logo.svg' alt='Revo logo' class='w-11/12 m-auto' />
     <Card>
       <p>
         O nome REVO é uma abreviação para "revolução", e simboliza a
@@ -55,13 +57,20 @@ const colore = [
       </p>
     </Card>
   </main>
-  <div class="bg-darkBlue">
-    <div class="container">
-      <div class="grid grid-cols-1 md:grid-cols-2 place-items-center justify-items-center">
+  <div class='bg-darkBlue'>
+    <div class='container'>
+      <div
+        class='grid grid-cols-1 lg:grid-cols-2 place-items-center justify-items-center'
+      >
         <Card>
-          <div class="min-h-[20px]"></div>
+          <div class='min-h-[20px]'></div>
           <h2>Conheça nossas cores</h2>
-          <p class="text-center">Nossa identidade visual é composta por cinco cores incríveis: o azul, o laranja, o amarelo, o salmão e o verde. Cada uma delas transmite uma mensagem única que reflete nossa abordagem moderna e inovadora.</p>
+          <p class='text-center md:text-left'>
+            Nossa identidade visual é composta por cinco cores incríveis: o
+            azul, o laranja, o amarelo, o salmão e o verde. Cada uma delas
+            transmite uma mensagem única que reflete nossa abordagem moderna e
+            inovadora.
+          </p>
         </Card>
         {
           colore.map((item) => (

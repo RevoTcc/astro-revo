@@ -1,13 +1,35 @@
 ---
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header";
-import Layout from "../layouts/Layout.astro";
+import Card from '../components/Card.astro'
+import Footer from '../components/Footer.astro'
+import Header from '../components/Header'
+import Layout from '../layouts/Layout.astro'
 ---
 
-<Layout title="Nossos serviços">
+<Layout title='Nossos serviços'>
   <Header client:load />
-  <main class="container">
-    <p>Nós somos uma consultoria especializada em desenvolvimento de aplicativos para celulares, criando soluções personalizadas para o seu negócio. Oferecemos uma equipe de especialistas em todas as etapas do processo, desde o planejamento até o lançamento e manutenção contínua. Com os nossos aplicativos, os usuários terão uma experiência única e inesquecível. Se você quer se destacar no mercado de aplicativos, estamos aqui para ajudá-lo. Preencha o nosso formulário de contato e descubra como podemos transformar a sua ideia em um aplicativo incrível!</p>
+  <main
+    class='w-11/12 container p-4 grid grid-cols-1 lg:grid-cols-2 place-items-center'
+  >
+    <img src='/images/content/team.svg' alt='' />
+    <Card>
+      <h2>O que fazemos?</h2>
+      <p>
+        Nós somos uma consultoria especializada em desenvolvimento de
+        aplicativos, criando soluções personalizadas para o seu negócio.
+        Oferecemos uma equipe de especialistas em todas as etapas do processo,
+        desde o planejamento até o lançamento e manutenção contínua. Com os
+        nossos aplicativos, os usuários terão uma experiência única e
+        inesquecível. Se você quer se destacar no mercado de aplicativos,
+        estamos aqui para ajudá-lo. Preencha o nosso formulário de contato e
+        descubra como podemos transformar a sua ideia em um aplicativo incrível!
+      </p>
+    </Card>
   </main>
+  <!-- <div class="bg-darkBlue h-[300px]">
+    <Card>
+      <p>FAQ</p>
+    </Card>
+  </div> -->
+  <div class="h-[200px]"></div>
   <Footer />
 </Layout>
