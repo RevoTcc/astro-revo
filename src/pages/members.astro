@@ -32,39 +32,43 @@ const members = [
 
 <Layout title='Equipe'>
   <Header client:load />
-    <div class='flex flex-col items-center m-4'>
-      <div class='w-3/4 text-center'>
-        <Card>
-          <h2>Conheça a nossa equipe</h2>
-          <p>
-            Temos um time apaixonado por tecnologia e sempre em busca de
-            soluções inovadoras para nossos clientes. Com anos de experiência em
-            desenvolvimento de aplicativos, estamos atualizados com as últimas
-            tendências do mercado.
-          </p>
-          <p>
-            Cada membro tem sua especialidade em design, desenvolvimento de
-            software, testes ou gerenciamento de projetos. Compartilhamos a
-            paixão por criar aplicativos incríveis que transformam vidas e
-            negócios.
-          </p>
-        </Card>
-      </div>
-      <div
-        class='w-1/2 flex flex-col items-center place-items-center md:grid grid-cols-2 grid-rows-2 gap-4'
-      >
-        {
-          members.map((item) => (
-            <MemberContainer
-              name={item.name}
-              role={item.role}
-              image={item.image}
-              url={item.url}
-            />
-          ))
-        }
-      </div>
-    
+  <div class='flex flex-col items-center'>
+    <main
+      class='w-11/12 container p-4 grid grid-cols-1 lg:grid-cols-2 place-items-center'
+    >
+      <img src='/images/content/user.svg' alt='' />
+      <Card>
+        <h2>Conheça a nossa equipe</h2>
+        <p>
+          Nós somos uma equipe de profissionais apaixonados por tecnologia e
+          inovação, dedicados a criar soluções personalizadas e eficientes para
+          atender às necessidades específicas de nossos clientes. Nossa
+          abordagem é orientada a resultados e centrada no usuário, garantindo
+          que cada projeto que entregamos seja funcional, intuitivo e atraente.
+          Se você está procurando uma equipe experiente e confiável para
+          ajudá-lo a impulsionar sua empresa para o próximo nível, estamos aqui
+          para ajudar!
+          <br />
+          Cada membro tem sua especialidade em design, desenvolvimento de software,
+          testes ou gerenciamento de projetos. Compartilhamos a paixão por criar
+          aplicativos incríveis que transformam vidas e negócios.
+        </p>
+      </Card>
+    </main>
+    <div
+      class='w-full flex flex-col items-center place-items-center md:grid grid-cols-4 grid-rows-1 gap-4 bg-darkBlue p-4'
+    >
+      {
+        members.map((item) => (
+          <MemberContainer
+            name={item.name}
+            role={item.role}
+            image={item.image}
+            url={item.url}
+          />
+        ))
+      }
     </div>
+  </div>
 </Layout>
 <Footer />
