@@ -11,8 +11,10 @@ const { name, role, image, url } = Astro.props
   class='hover:scale-105 transition-all'
 >
   <Card>
-    <img src={image} class='w-40' />
-    <h2 class='text-black'>{name}</h2>
-    <p class='text-darkBlue'>{role}</p>
+    <img
+      src={image ?? '/images/members/default.png'}
+      class='inline-block h-[200px] w-[200px] rounded-full ring-2 ring-black'
+    />
+    <h2 class='pt-4 text-black'>{name}</h2>
   </Card>
 </a>
