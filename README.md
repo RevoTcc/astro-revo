@@ -1,55 +1,36 @@
-# Astro Starter Kit: Basics
+# ![image](public/images/logo.svg)
 
-```
-npm create astro@latest -- --template basics
-```
+<div style="display: flex; align-items: center; justify-content: end;">
+  Feito com <img src="public/images/icons/astro.svg" width="24px"> 
+</div>
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## A ideia
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+A REVO é uma consultoria voltada para o meio da tecnologia, criando produtos e soluções ideais para todos os tipos de clientes no mercado. Contamos com a utilização de tecnologias emergentes e inovadoras, para demonstrar que o nosso objetivo é estar por dentro das melhores tecnologias do mercado.
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+## O site
 
+O site foi projetado em Mobile First, tendo seu layout totalmente responsivo e adaptado para diferentes tipos de dispositivos.
 
-## 🚀 Project Structure
+##### preview:
 
-Inside of your Astro project, you'll see the following folders and files:
+<img src="public/images/preview/mobile.gif">
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Tecnologias utilizadas
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+<img src="public/images/icons/astro.svg" width="24px"> 
+<img src="public/images/icons/tailwind.svg" width="24px"> 
+<img src="public/images/icons/react.svg" width="24px">
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Utilizamos o framework Astro para a criação do projeto, por ele ser baseado em HTML e a capacidade de integrar outros frameworks e bibliotecas.
 
-Any static assets, like images, can be placed in the `public/` directory.
+O Tailwind foi usado para a estilização do site, por ser fácil para gerenciar o CSS das páginas. Ele é responsável por padronizar os elementos da página, com cores e estilo de fontes.
 
-## 🧞 Commands
+Já o React foi utilizado para a criação dos componentes funcionais, como o header responsivo. Por ser um componente isolado.
 
-All commands are run from the root of the project, from a terminal:
+## Mais informações
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+  <a href="https://instagram.com/dev.revo" target="_blank" style="color: inherit; display: flex; gap: 0.5rem; align-items: center; text-decoration: none;">
+    <img src="public/images/icons/instagram.svg" width="24px">
+    Nosso instagram 
+  </a>
