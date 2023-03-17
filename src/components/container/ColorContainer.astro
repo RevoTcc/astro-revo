@@ -5,7 +5,7 @@ const { name, description, title } = Astro.props
 
 <Card>
   <div
-    class='flex justify-self-center justify-between items-center gap-5 min-h-[120px] self-center'
+    class='flex justify-self-center justify-between items-center min-h-[120px] self-center'
   >
     <svg class='w-10 h-10 m-2'>
       <circle
@@ -18,7 +18,7 @@ const { name, description, title } = Astro.props
     </svg>
     <div class='w-11/12'>
       <h2>{title}</h2>
-      <p>
+      <p class="ml-2">
         {description}
       </p>
     </div>

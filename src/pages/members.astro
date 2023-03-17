@@ -7,25 +7,24 @@ import Layout from '../layouts/Layout.astro'
 
 const members = [
   {
-    name: 'Matheus',
-    role: 'Líder',
-    image: '/images/members/Matheus.svg',
-    url: 'https://github.com/kiwizitos',
-  },
-  {
-    name: 'Yasmim',
-    role: 'Redatora',
-    image: '/images/members/default.png',
-  },
-  {
     name: 'Fabíola',
-    role: 'Redatora',
-    image: '/images/members/default.png',
+    image: '/images/members/fabiola.svg',
+    url: 'https://www.linkedin.com/in/fabiola-santana-santos-b1a37037/',
   },
   {
     name: 'Laura',
-    role: 'Backend',
-    image: '/images/members/default.png',
+    image: '/images/members/laura.svg',
+    url: 'https://www.linkedin.com/in/lauraxch',
+  },
+  {
+    name: 'Matheus',
+    image: '/images/members/matheus.svg',
+    url: 'https://www.github.com/kiwizitos',
+  },
+  {
+    name: 'Yasmim',
+    image: '/images/members/yasmin.svg',
+    url: 'https://www.linkedin.com/in/yasmin-rodrigues-71bb61246',
   },
 ]
 ---
@@ -56,16 +55,11 @@ const members = [
       </Card>
     </main>
     <div
-      class='w-full flex flex-col items-center place-items-center md:grid grid-cols-4 grid-rows-1 gap-4 bg-darkBlue p-4'
+      class='w-full flex flex-col items-center place-items-center md:grid grid-cols-2 grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 gap-4 bg-darkBlue p-4'
     >
       {
         members.map((item) => (
-          <MemberContainer
-            name={item.name}
-            role={item.role}
-            image={item.image}
-            url={item.url}
-          />
+          <MemberContainer name={item.name} image={item.image} url={item.url} />
         ))
       }
     </div>
