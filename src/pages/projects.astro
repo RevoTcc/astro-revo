@@ -13,40 +13,37 @@ import Layout from '../layouts/Layout.astro'
     <Card>
       <h2>Alguns de nossos projetos</h2>
       <p>
-        Aqui você encontrará uma galeria de projetos incríveis, que foram
-        criados com paixão e dedicação para superar as expectativas. Nossos
-        projetos são verdadeiras obras de arte que combinam inovação, design e
-        tecnologia para trazer soluções eficazes e impactantes para as
-        necessidades de nossos clientes. Com cada projeto, buscamos ultrapassar
-        os limites e desafiar a si mesmos a superar a excelência. Se você está
-        procurando por projetos únicos que possam surpreender e encantar, então
-        você veio ao lugar certo! Navegue pela nossa galeria e deixe-se inspirar
-        pelos nossos trabalhos incríveis.
+        Se você está procurando por projetos únicos que possam surpreender e
+        encantar, então você veio ao lugar certo! Navegue pela nossa galeria e
+        deixe-se inspirar pelos nossos trabalhos incriveis.
       </p>
     </Card>
     <img src='/images/content/navigation.svg' alt='' />
   </main>
-  <div class='bg-darkBlue p-4'>
+  <div class='bg-[#191919] p-4'>
     <div
       class='w-11/12 container grid grid-cols-1 lg:grid-cols-2 place-items-center'
     >
-      <Card>
-        <h2>TableEase</h2>
-        <p>
-          O TableEase é um aplicativo projetado para simplificar o processo de
-          gerenciamento de comandas, tornando a sua experiência ainda melhor.
-          Com nossos gráficos interativos, você poderá visualizar informações
-          importantes de uma forma mais fácil e intuitiva, permitindo que você
-          analise dados, estatísticas e desempenho em tempo real. A atualização
-          mais recente fortalece essa funcionalidade, proporcionando uma
-          experiência ainda mais agradável e completa para você. Experimente
-          agora mesmo e descubra como o TableEase pode ajudá-lo a gerenciar suas
-          comandas de maneira simples e eficiente.
+      <div class='text-white lg:w-1/2'>
+        <h2>Table Ease</h2>
+        <p class='mb-4'>
+          Vai rachar a conta? Dividir esse valor entre amigos nunca foi tão
+          fácil!
         </p>
-        <button>Conheça</button>
-      </Card>
-      <img src='/images/content/account.svg' alt='' class='w-1/2' />
+        <a href="https://tableease.netlify.app/" target="_blank">
+          <button class='w-full bg-[#00BFFF] hover:bg-[#00BFFF]'>Conheça</button>
+        </a>
+      </div>
+      <div
+        class='flex flex-col sm:flex-row sm:w-1/3 gap-10 items-center justify-center p-10'
+      >
+        <img src='/images/preview/table-ease01.png' alt='' />
+        <img src='/images/preview/table-ease02.png' alt='' />
+        <img src='/images/preview/table-ease03.png' alt='' />
+      </div>
     </div>
+  </div>
+  <div class='bg-darkBlue'>
     <h2 class='text-white text-center pt-10'>
       Fique por dentro e saiba todas as novidades dos nossos projetos :)
     </h2>
